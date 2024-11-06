@@ -12,7 +12,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          path: sysmlv2-models
       - name: Tipe
         run: |
           ls -alig
@@ -24,5 +23,5 @@ jobs:
           sireum
           
           ls -alig
-          
+
           .ci/test.cmd

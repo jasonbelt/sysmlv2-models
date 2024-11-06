@@ -28,7 +28,7 @@ jobs:
           choco config get cacheLocation
           choco install --no-progress cygwin
           C:\tools\cygwin\cygwinsetup.exe -qgnNdO -R C:/tools/cygwin -s http://mirrors.kernel.org/sourceware/cygwin/ -P gcc-core,gcc-g++,make,cmake
-     - name: Check LongPathsEnabled
+      - name: Check LongPathsEnabled
         run: |
           (Get-ItemProperty "HKLM:System\CurrentControlSet\Control\FileSystem").LongPathsEnabled
       - name: Test
