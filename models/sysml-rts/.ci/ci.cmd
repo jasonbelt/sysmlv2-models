@@ -68,7 +68,7 @@ if (result == 0) {
 
 if (result == 0 && Os.env("CAMKES").nonEmpty) {
   result = run("Transpiling Slang project for seL4", F, proc"$sireum slang run ${homeDir / "hamr" / "slang" / "bin" / "transpile-sel4-cust.cmd"}")
-  result = run("Building CAmkES image", F, proc"$sireum slang run ${homeDir / "hamr" / "camkes" / "bin" / "run-camkes.sh" }")
+  result = run("Building CAmkES image", F, proc"${homeDir / "hamr" / "camkes" / "bin" / "run-camkes.sh" }")
 }
 
 if (result == 0) {
