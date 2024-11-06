@@ -28,17 +28,15 @@ val toKeep = ops.ISZOps(ISZ(
   (root / "bin"),
   (camkesDir / "kernel" / "domain_schedule.c"),
   (camkesDir/ "settings.cmake"),
-  (slangDir / "bin" / "transpile-sel4-cust.cmd"),
 
   (cDir / "ext-c"),
+
   (slangDir / ".idea"),
+  (slangDir / "bin" / "run-logika.cmd"),
+  (slangDir / "bin" / "transpile-sel4-cust.cmd"),
   (slangDir / "src" / "main" / "component"),
   (slangDir / "src" / "test" / "bridge"),
   (slangDir / "src" / "test" / "system"),
-  (slangDir / ".idea"),
-  (slangRMDir / "src" / "main" / "component"),
-  (slangRMDir / "src" / "test" / "bridge"),
-  (slangRMDir / "src" / "test" / "system")
 ))
 
 
