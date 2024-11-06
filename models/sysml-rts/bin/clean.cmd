@@ -23,7 +23,6 @@ val hamrDir: Os.Path = root / "hamr"
 val cDir = hamrDir / "c"
 val camkesDir = hamrDir / "camkes"
 val slangDir = hamrDir / "slang"
-val slangRMDir = hamrDir / "slang-rm"
 
 val toKeep = ops.ISZOps(ISZ(
   (root / "bin"),

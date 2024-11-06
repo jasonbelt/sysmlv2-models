@@ -23,7 +23,7 @@ val home = homeBin.up
 
 val actuationDir = home / "src" / "main" / "component" / "rts" / "Actuation"
 
-val sireumBin = Os.path(Os.env("SIREUM_HOME").get) / "bin"
+val sireumBin = Os.path(Os.env("SIREUM_HOME").get) / "bin" 
 val sireum = sireumBin / (if(Os.isWin) "sireum.bat" else "sireum")
 
 val ignoreStringInterpWarnings: B = T // if T then ignore string interp warnings as the strings only appear in api.logInfo calls and not in contracts

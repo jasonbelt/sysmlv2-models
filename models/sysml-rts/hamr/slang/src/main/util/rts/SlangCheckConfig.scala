@@ -34,14 +34,6 @@ OrLogic_actuationSubsystem_saturationActuatorUnit_actuateSaturationActuator_orLo
 
 Actuator_actuationSubsystem_saturationActuatorUnit_saturationActuator_actuator_Containers.scala
 
-InstrumentationMockThread_instrumentationMock_instrumentationMockThread_Containers.scala
-
-EventControlMockThread_eventControlMock_eventControlMockThread_Containers.scala
-
-ActuatorsMockThread_actuatorsMock_actuatorsMockThread_Containers.scala
-
-ObservationKind.scala
-
 Container.scala
 
 DataContent.scala
@@ -226,18 +218,6 @@ Aux_Types.scala
 
 @datatype class Config_ActuationOrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS(attempts: Z, verbose: B, filter: Actuation.OrLogic_actuationSubsystem_tempPressureActuatorUnit_actuateTempPressureActuator_orLogic_PostState_Container_PS => B) {}
 
-@datatype class Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container(attempts: Z, verbose: B, additiveTypeFiltering: B, typeFilter: ISZ[ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_DataTypeId.Type], filter: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container => B) {}
-
-@datatype class Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P(attempts: Z, verbose: B, filter: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_P => B) {}
-
-@datatype class Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS(attempts: Z, verbose: B, filter: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PreState_Container_PS => B) {}
-
-@datatype class Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container(attempts: Z, verbose: B, additiveTypeFiltering: B, typeFilter: ISZ[ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container_DataTypeId.Type], filter: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container => B) {}
-
-@datatype class Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container_P(attempts: Z, verbose: B, filter: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container_P => B) {}
-
-@datatype class Config_ActuatorsActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container_PS(attempts: Z, verbose: B, filter: Actuators.ActuatorsMockThread_actuatorsMock_actuatorsMockThread_PostState_Container_PS => B) {}
-
 @datatype class Config_Base_TypesBoolean_Payload(attempts: Z, verbose: B, filter: Base_Types.Boolean_Payload => B) {}
 
 @datatype class Config_Base_TypesInteger_Payload(attempts: Z, verbose: B, filter: Base_Types.Integer_Payload => B) {}
@@ -272,34 +252,8 @@ Aux_Types.scala
 
 @datatype class Config_Base_TypesBits_Payload(attempts: Z, verbose: B, filter: Base_Types.Bits_Payload => B) {}
 
-@datatype class Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container(attempts: Z, verbose: B, additiveTypeFiltering: B, typeFilter: ISZ[EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container_DataTypeId.Type], filter: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container => B) {}
-
-@datatype class Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container_P(attempts: Z, verbose: B, filter: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container_P => B) {}
-
-@datatype class Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container_PS(attempts: Z, verbose: B, filter: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PreState_Container_PS => B) {}
-
-@datatype class Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container(attempts: Z, verbose: B, additiveTypeFiltering: B, typeFilter: ISZ[EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_DataTypeId.Type], filter: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container => B) {}
-
-@datatype class Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P(attempts: Z, verbose: B, filter: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_P => B) {}
-
-@datatype class Config_EventControlEventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS(attempts: Z, verbose: B, filter: EventControl.EventControlMockThread_eventControlMock_eventControlMockThread_PostState_Container_PS => B) {}
-
-@datatype class Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container(attempts: Z, verbose: B, additiveTypeFiltering: B, typeFilter: ISZ[InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container_DataTypeId.Type], filter: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container => B) {}
-
-@datatype class Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container_P(attempts: Z, verbose: B, filter: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container_P => B) {}
-
-@datatype class Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container_PS(attempts: Z, verbose: B, filter: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PreState_Container_PS => B) {}
-
-@datatype class Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container(attempts: Z, verbose: B, additiveTypeFiltering: B, typeFilter: ISZ[InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_DataTypeId.Type], filter: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container => B) {}
-
-@datatype class Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P(attempts: Z, verbose: B, filter: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_P => B) {}
-
-@datatype class Config_InstrumentationInstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS(attempts: Z, verbose: B, filter: Instrumentation.InstrumentationMockThread_instrumentationMock_instrumentationMockThread_PostState_Container_PS => B) {}
-
 @datatype class Config_utilContainer(attempts: Z, verbose: B, additiveTypeFiltering: B, typeFilter: ISZ[utilContainer_DataTypeId.Type], filter: util.Container => B) {}
 
 @datatype class Config_utilEmptyContainer(attempts: Z, verbose: B, filter: util.EmptyContainer => B) {}
-
-@datatype class Config_runtimemonitorObservationKindType(attempts: Z, verbose: B, filter: runtimemonitor.ObservationKind.Type => B) {}
 
 
