@@ -34,7 +34,7 @@ jobs:
       - name: Test
         shell: cmd
         run: |
-          call cmd /V/C "set DISTRO=ive&& curl -JLOs https://github.com/sireum/kekinian/releases/download/dev/install.cmd && install.cmd && del /q/f install.cmd" || goto :EOF
+          cmd /V/C "set DISTRO=ive&& curl -JLOs https://github.com/sireum/kekinian/releases/download/dev/install.cmd && install.cmd && del /q/f install.cmd"
           
           set SIREUM_HOME=%USERPROFILE%\Applications\Sireum
           set PATH=%SIREUM_HOME%\bin;%PATH%
