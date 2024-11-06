@@ -1,0 +1,14 @@
+#ifndef TEMPSENSOR_TSP_TST_ADAPTER_H
+#define TEMPSENSOR_TSP_TST_ADAPTER_H
+
+#include <all.h>
+
+Unit tc_TempControlMixedSeL4CAmKES_TempSensor_tsp_tst_adapter_initialiseArchitecture(STACK_FRAME_ONLY);
+
+Unit tc_TempControlMixedSeL4CAmKES_TempSensor_tsp_tst_adapter_initialiseEntryPoint(STACK_FRAME_ONLY);
+
+Unit tc_TempControlMixedSeL4CAmKES_TempSensor_tsp_tst_adapter_computeEntryPoint(STACK_FRAME_ONLY);
+
+art_Bridge_EntryPoints tc_TempControlMixedSeL4CAmKES_TempSensor_tsp_tst_adapter_entryPoints(STACK_FRAME_ONLY);
+
+#endif

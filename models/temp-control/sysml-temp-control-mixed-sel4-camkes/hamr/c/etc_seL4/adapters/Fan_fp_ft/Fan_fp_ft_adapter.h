@@ -1,0 +1,14 @@
+#ifndef FAN_FP_FT_ADAPTER_H
+#define FAN_FP_FT_ADAPTER_H
+
+#include <all.h>
+
+Unit tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_adapter_initialiseArchitecture(STACK_FRAME_ONLY);
+
+Unit tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_adapter_initialiseEntryPoint(STACK_FRAME_ONLY);
+
+Unit tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_adapter_computeEntryPoint(STACK_FRAME_ONLY);
+
+art_Bridge_EntryPoints tc_TempControlMixedSeL4CAmKES_Fan_fp_ft_adapter_entryPoints(STACK_FRAME_ONLY);
+
+#endif

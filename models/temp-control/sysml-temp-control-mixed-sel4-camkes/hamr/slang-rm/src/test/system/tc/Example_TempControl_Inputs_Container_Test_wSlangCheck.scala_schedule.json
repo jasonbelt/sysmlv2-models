@@ -1,0 +1,5 @@
+{
+  "nickNames": "TempControlSystem_Instance_tsp_tst:TempControlSystem_Instance_tsp_tst,TempControlSystem_Instance_tcp_tct:TempControlSystem_Instance_tcp_tct,TempControlSystem_Instance_fp_ft:TempControlSystem_Instance_fp_ft",
+  "scheduleProvider": "art.scheduling.static.StaticScheduler",
+  "schedule": "TempControlSystem_Instance_tsp_tst,TempControlSystem_Instance_tcp_tct,TempControlSystem_Instance_fp_ft"
+}
