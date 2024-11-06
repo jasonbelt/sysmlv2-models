@@ -58,7 +58,7 @@ if (result == 0) {
 }
 
 if (result == 0) {
-  result = run("Transpiling Slang project", F, proc"$sireum slang run ${homeDir / "hamr" / "slang" / "bin" / "transpile.cmd"}")
+  result = run("Transpiling Slang project for Linux", F, proc"$sireum slang run ${homeDir / "hamr" / "slang" / "bin" / "transpile.cmd"}")
   result = run("Compiling C project", F, proc"$sireum slang run ${homeDir / "hamr" / "c" / "bin" / "compile.cmd"} Linux")
 }
 
@@ -67,8 +67,8 @@ if (result == 0) {
 }
 
 if (result == 0 && Os.env("CAMKES").nonEmpty) {
-  result = run("Transpiling Slang project", F, proc"$sireum slang run ${homeDir / "hamr" / "slang" / "bin" / "transpile.cmd"}")
-  result = run("Building CAmkES image", F, proc"$sireum slang run ${homeDir / "hamr" / "camkes" / "bin" / "run-camkes.cmd"} -c /root/camkes")
+  result = run("Transpiling Slang project for seL4", F, proc"$sireum slang run ${homeDir / "hamr" / "slang" / "bin" / "transpile-sel4-cust.cmd"}")
+  result = run("Building CAmkES image", F, proc"$sireum slang run ${homeDir / "hamr" / "camkes" / "bin" / "run-camkes.cmd" }")
 }
 
 if (result == 0) {
