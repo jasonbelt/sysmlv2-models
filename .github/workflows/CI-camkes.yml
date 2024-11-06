@@ -45,7 +45,8 @@ jobs:
           export DEBIAN_FRONTEND=noninteractive
           apt-get update
           ${aptInstall} p7zip-full
-          
+          ${aptInstall} unzip
+
           # Installing emacs installs some package(s) that resolve an issue where
           # the OSATE gumbo parser fails to initialize when used in the docker container.
           ${aptInstall} emacs
