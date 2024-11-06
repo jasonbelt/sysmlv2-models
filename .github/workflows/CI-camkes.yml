@@ -67,4 +67,6 @@ jobs:
           repo init -u https://github.com/seL4/camkes-vm-examples-manifest.git
           repo sync
 
+          cd $HOME/sysmlv2-models
+          
           .ci/test.cmd
