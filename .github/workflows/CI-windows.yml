@@ -41,8 +41,4 @@ jobs:
 
           sireum.bat
           
-          call .ci\test.cmd || goto :error
-                    
-          goto :EOF
-          :error
-          exit /b %errorlevel%
+          .ci\test.cmd
