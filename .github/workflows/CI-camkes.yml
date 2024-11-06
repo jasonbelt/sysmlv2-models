@@ -27,7 +27,7 @@ jobs:
         with:
           path: sysmlv2-models
           submodules: recursive
-      - name: Build
+      - name: Test
         env:
           # add verbose flag if workflow is restarted with "enable debug logging" checked or if requested
           # via workflow dispatch
